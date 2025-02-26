@@ -1,0 +1,74 @@
+* {
+    --dark: #14213d;
+    --orange: #fca311;
+    --myGray: #e5e5e5;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 400px) {
+    aside {
+        display: none;
+    }
+}
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr 40vw 40vw;
+    grid-template-rows: 7% 5% 800px 10%;
+
+    grid-template-areas: 
+    'hd hd hd'
+    '.  .  . '
+    'sc sc sc'
+    'ft ft ft';
+}
+
+
+header {
+    grid-area: hd;
+    display: flex;
+}
+
+section {
+    grid-area: sc;
+    background-color: var(--myGray);
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    grid-area: ft;
+}
+
+nav {
+    background-color: black;
+}
+
+
+.burger {
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: black;
+}
+.icons {
+    height: 100%;
+    width: 30%;
+}
+
+.title {
+    height: 100%;
+    width: 40%;
+}
+
+.invisible {
+    visibility: none;
+}
+
+.product {
+    height: 50%;
+}
