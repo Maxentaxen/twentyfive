@@ -16,6 +16,7 @@ body {
 }
 
 header {
+    padding-left: 10px;
     background-color: var(--dark);
     color: white;
     display: flex;
