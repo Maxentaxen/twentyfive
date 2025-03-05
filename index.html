@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - </title>
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://kit.fontawesome.com/9f2fd39c2c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="invisible">
@@ -12,12 +16,18 @@
   </nav>
   <div class="container">
     <header>
-      <div class="burger"></div>
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="title">
-        Titel
+        title
       </div>
       <div class="icons">
-        ikoner
+        <a class="fa-solid fa-cart-shopping link-icon" href="meow.html"></a>
+        <a class="fa-brands fa-instagram link-icon" href="https://instagram.com"></a>
+        <a class="fa-brands fa-github link-icon" href="https://github.com"></a>
       </div>
     </header>
     <aside>
@@ -31,12 +41,41 @@
       <div class="yap"></div>
     </aside>
     <section>
-      
-      <div class="product">produkt 1</div>
-      <div class="product">produkt 2</div>
+      <div class="product" id="product1">
+        <picture>
+          <source media="(min-width: 401px)" srcset="">
+          <img src="/img/3dprinter1.jpg" alt="">
+        </picture>
+        <div class="product-info">
+          <h2>3D-modell till print</h2>
+          <p>Du skickar in en 3d-modell för att printas och får tillbaka den printad inom en vecka.</p>
+          <p>Pris: Börjar på 100kr men beror på printtid</p>
+          <button>Lägg till i varukorgen</button>
+        </div>
+      </div>
+      <div class="product" id="product2">
+        <img src="/img/3dprinter2.jpg" alt="En bild på en 3d-printad produkt">
+        <div class="product-info">
+          <h2>Idé till Print</h2>
+          <p>Beskriv en idé och jag kommer att modellera samt printa den</p>
+          <p>Pris: Från 300kr (Beror på idéns komplexitet)</p>
+          <button>Lägg till i varukorgen</button>
+        </div>
+      </div>
     </section>
     <footer>
-      footer
+      <div class="footer-info">
+        <h3>Kontakt</h3>
+        <p>Telefon: 070-245 80 74</p>
+        <p>Email: maxniemi@icloud.com </p>
+        <a href="qna.html">Vanliga frågor</a>
+      </div>
+      <div class="footer-info">
+        <h3>Om [blank]</h3>
+        <p>Dataskyddspolicy</p>
+        <p>Integritetspolicy</p>
+        <p>Sekretesspolicy</p>
+      </div>
     </footer>
   </div>
   
