@@ -1,5 +1,9 @@
 var button = document.getElementById('nav-icon1');
 var navbar = document.getElementById('nav');
+var ideaSelect = document.getElementById('idea');
+var selected = document.getElementById('selected');
+var modelselect = document.getElementById('model');
+var addToCart = document.getElementById('cartAdd');
 button.addEventListener('click', function() { 
     this.classList.toggle('open');
     navbar.classList.toggle('visible');}
@@ -11,3 +15,18 @@ document.onkeydown = function(event) {
         button.classList.toggle('open');
     } 
 }
+ideaSelect.addEventListener('click', function() {
+    selected.classList.toggle('left');
+    selected.classList.toggle('right');
+    addToCart.classList.toggle('idea-selected')
+    addToCart.classList.toggle('model-selected');
+    addToCart.textContent = "300:-"
+    
+})
+modelselect.addEventListener('click', function() {
+    selected.classList.toggle('left');
+    selected.classList.toggle('right');
+    addToCart.classList.toggle('model-selected');
+    addToCart.classList.toggle('idea-selected')
+    addToCart.textContent = "100:-"
+})
