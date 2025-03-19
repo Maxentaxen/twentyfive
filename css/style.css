@@ -407,7 +407,7 @@ aside img {
 .selection {
     display: flex;
     width: 50%;
-    height: 50px;  
+    height: 40px;  
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
@@ -416,17 +416,17 @@ aside img {
     background-color: var(--myGray);
     color: black;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .selected {
-    height: 70%;
-    width: 30%;
+    height: 100%;
+    width: 50%;
     position: absolute;
     z-index: 2;
     background-color: var(--dark);
     opacity: 0.5;
     transition: 350ms ease;
-    border-radius: 10px;
 }
 
 
@@ -436,13 +436,11 @@ aside img {
 
 
 .left {
-    margin-left: 10px;
-    margin-right:60%;
+    transform: translate(-50%);
 }
 
 .right {
-    margin-right: 10px;
-    margin-left:60%;
+    transform: translate(50%);
 }
 
 
