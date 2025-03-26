@@ -54,7 +54,7 @@ body {
         display: flex;
         width: 100%;
         height: 900px;
-        background-color: #0a132794;
+        background-color: #0a132776;
         flex-direction: column;
         justify-content: space-evenly;
     }    
@@ -188,6 +188,8 @@ nav a {
     display: flex;
     padding: 10px;
     gap: 10px;
+    box-shadow: 5px 5px 5px 5px #000000A0;
+
     
 }
 
@@ -219,7 +221,9 @@ aside img {
     background-color: var(--dark);
     color: white;
     padding: 20px;
-    height: 400px
+    height: 400px;
+    box-shadow: 5px 5px 5px 5px #000000A0;
+
 }
 
 .product img {
@@ -256,13 +260,7 @@ aside img {
     position: relative;
     margin:  auto;
     z-index: 11;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .35s ease-in-out;
-    -moz-transition: .35s ease-in-out;
-    -o-transition: .35s ease-in-out;
     transition: .35s ease-in-out;
     cursor: pointer;
   }
@@ -276,13 +274,7 @@ aside img {
     border-radius: 9px;
     opacity: 1;
     left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .35s ease-in-out;
-    -moz-transition: .35s ease-in-out;
-    -o-transition: .35s ease-in-out;
     transition: .35s ease-in-out;
   }
 
@@ -302,9 +294,6 @@ aside img {
   
   #nav-icon1.open span:nth-child(1) {
     top: 18px;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
     transform: rotate(135deg);
   }
   
@@ -315,9 +304,6 @@ aside img {
   
   #nav-icon1.open span:nth-child(3) {
     top: 18px;
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
 
@@ -456,4 +442,144 @@ aside img {
     border-radius: 20px;
     padding: 15px;
     color: black;
+}
+
+
+
+/** Cart page **/
+
+.cart-container {
+    height: 1200px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 7% 400px 400px 10%;
+
+    grid-template-areas: 
+    'hd hd'
+    'i1 in'
+    'i2 in'
+    'ft ft';
+}
+
+
+#prod1 {grid-area: i1;}
+#prod2 {grid-area: i2;}
+.product-in-cart {
+
+    background-color: var(--dark);
+    margin: auto;
+    margin-top: 10%;
+    height: 300px; 
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    'img inf'
+    'img eta';
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #000000A0;
+
+}
+
+
+.image {
+    grid-area: img;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
+
+.info {
+    grid-area: inf;
+    background-color: #00011d;
+    border-radius: 15px;
+    margin: 7px;
+    padding-left: 2%;
+    line-height: 10px;
+}
+
+
+.eta {
+    grid-area: eta;
+    background-color:#00011d;
+    border-radius: 15px;
+    margin: 7px;
+    padding-left: 2%;
+    line-height: 10px;
+
+}
+
+.image img {
+    height: 70%;
+    width: 100%;
+    margin:auto;
+}
+
+.disclaimer {
+    font-size: 6px;
+}
+
+.shipping {
+    grid-area: in;
+    background-color: var(--dark);
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #000000A0;
+}
+.card {
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+#cards {
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+}
+
+input {
+    border-radius: 10px;
+}
+
+
+.pay {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--orange);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 350ms ease;
+}
+
+
+.pay:hover {
+    border-radius: 5px;
+    scale: 1.1;
+}
+
+#betalning {
+    margin-top: 5px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
 }

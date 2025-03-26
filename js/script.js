@@ -4,6 +4,8 @@ var ideaSelect = document.getElementById('idea');
 var selected = document.getElementById('selected');
 var modelselect = document.getElementById('model');
 var addToCart = document.getElementById('cartAdd');
+var payButton = document.getElementById('pay');
+
 button.addEventListener('click', function() { 
     this.classList.toggle('open');
     navbar.classList.toggle('visible');}
@@ -29,4 +31,8 @@ modelselect.addEventListener('click', function() {
     addToCart.classList.toggle('model-selected');
     addToCart.classList.toggle('idea-selected')
     addToCart.textContent = "100:-"
+})
+
+payButton.addEventListener('click', function() {
+    Document.getElementById('betalning').reset();
 })

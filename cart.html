@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9f2fd39c2c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="" id="nav">
+        <a href="">Om oss</a>
+        <a href="">Produkter och Tjänster</a>
+    </nav>
+
+    <div class="cart-container">
+        <header>
+            <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="title">
+            <a href="index.html">titel</a>
+            </div>
+            <div class="icons">
+            <a class="fa-solid fa-cart-shopping link-icon" href="cart.html"></a>
+            <a class="fa-brands fa-instagram link-icon" href="https://instagram.com"></a>
+            <a class="fa-brands fa-github link-icon" href="https://github.com"></a>
+            </div>
+        </header>
+        <div class="product-in-cart" id="prod1">
+            <img src="/img/prodincart1.png" alt="En skålliknande 3d-modell" class="image">
+            <div class="info">
+                <h3>Din produkt</h3>
+                <p>Typ: Modell till print</p>
+                <p>Antal: 1</p>
+                <p>Pris: 143:-</p>
+            </div>
+            <div class="eta">
+                <h3>Beräknade tider</h3>
+                <p>Nuvarande kö: 3h</p>
+                <p>Printtid: 9h 45m</p>
+                <p>Leveranstid: n/a</p>
+            </div>
+        </div>
+        <div class="product-in-cart" id="prod2">
+            <div class="image">
+                <img src="/img/keychain.jpg" alt="En nyckelring med en sko och en rulle 3d-printerfilament">
+            </div>
+            <div class="info">
+                <h3>Din produkt*</h3>
+                <p>Typ: Idé till print</p>
+                <p>Antal: 1</p>
+                <p>Pris: 343:-</p>
+                <p class="disclaimer">* ungefärlig representation av din beskrivna idé</p>
+            </div>
+            <div class="eta">
+                <h3>Beräknade tider</h3>
+                <p>Nuvarande kö: 3h</p>
+                <p>Printtid: 2h 24m</p>
+                <p>Leveranstid: n/a</p>
+            </div>
+        </div>
+        <div class="shipping">
+                <form id="betalning">
+                    <h2>Betalningsinformation</h2>
+                    <select name="cards" id="cards">
+                        <option value="empty">Välj betalningsmetod</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="swish">Swish</option>
+                        <option value="visa">Visa</option>
+                        <option value="Klarna">Klarna</option>
+                    </select>
+                    Telefonnummer: <input type="text" placeholder="">
+                    Kortnummer: <input type="text" placeholder="">
+                    Utgångsdatum: <input type="text" placeholder="">
+                    CVC: <input type="text" placeholder="">
+
+                    <h2>Adress och frakt</h2>
+                    Gata och nummer: <input type="text" placeholder="">
+                    Postnummer: <input type="text" placeholder="">
+                    Stad: <input type="text" placeholder="">
+                    Region: <input type="text" placeholder="">
+                <button class="pay" id="pay">Betala</button>
+
+                </form>
+        </div>
+        <footer>
+            <div class="footer-info">
+              <h3>Kontakt</h3>
+              <p>Telefon: 070-245 80 74</p>
+              <p>Email: maxniemi@icloud.com </p>
+              <a href="qna.html">Vanliga frågor</a>
+            </div>
+            <div class="footer-info">
+              <h3>Om [blank]</h3>
+              <p>Dataskyddspolicy</p>
+              <p>Integritetspolicy</p>
+              <p>Sekretesspolicy</p>
+            </div>
+          </footer>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
