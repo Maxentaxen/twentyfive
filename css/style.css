@@ -397,7 +397,6 @@ aside img {
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    gap: 50px;
     position: relative;
     background-color: var(--myGray);
     color: black;
@@ -418,6 +417,11 @@ aside img {
 
 .model, .idea {
     cursor: pointer;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -444,6 +448,7 @@ aside img {
     color: black;
 }
 
+<<<<<<< HEAD
 
 
 /** Cart page **/
@@ -582,4 +587,22 @@ input {
     flex-direction: column;
     gap: 5px;
     width: 50%;
+=======
+#cartAdd {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 350ms ease;
+}
+
+#cartAdd:hover {
+    background-color: #ff7b00;
+    border-radius: 5px;
+    scale: 1.1;
+>>>>>>> bb94fb59b58ead2faaf92d74f9869813c0f042df
 }
