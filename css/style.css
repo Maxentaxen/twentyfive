@@ -19,12 +19,13 @@ body {
     background-image: url('/img/bgimg.png');
     background-repeat: repeat;
     background-size: 30%;
+    box-sizing: border-box;
 }    
 
 .container {
     display: grid;    
     grid-template-columns: 1fr 40vw 40vw;
-    grid-template-rows: 7% 5% 900px 4% 10%;
+    grid-template-rows: 75px 5% 900px 4% 10%;
 }
 
 /** Media Queries **/
@@ -114,6 +115,7 @@ header {
 .link-icon:hover {
     color: #3c4458;
     background-color: var(--myGray);
+    scale: 1.1;
 }
 
 .link-icon {
@@ -316,7 +318,7 @@ aside img {
     display: grid;
     height: 800px;
     grid-template-columns: 1fr 43vw 43vw;
-    grid-template-rows: 7% 600px 3% 15%;
+    grid-template-rows: 75px 600px 3% 15%;
 
 }
 
@@ -335,7 +337,7 @@ aside img {
 @media screen and (max-width: 500px) {
     .productbox {   
         grid-template-columns: 50% 50%;
-        grid-template-rows: 7% 500px 600px 15%;
+        grid-template-rows: 75px 500px 600px 15%;
         grid-template-areas:
         'hd hd'
         's1 s1'
@@ -458,7 +460,7 @@ aside img {
 
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 7% 400px 400px 10%;
+    grid-template-rows: 75px 400px 400px 10%;
 
     grid-template-areas: 
     'hd hd'
@@ -564,7 +566,7 @@ input {
 
 
 .pay {
-    width: 30%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--orange);
@@ -603,5 +605,158 @@ input {
 #cartAdd:hover {
     background-color: #ff7b00;
     border-radius: 5px;
+    scale: 1.1;
+}
+
+
+@media screen and (max-width: 500px) {
+    .cart-container {
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        grid-template-rows: 75px 450px 450px 900px 10%;
+        grid-template-areas: 
+        'hd hd'
+        'i1 i1'
+        'i2 i2'
+        'in in'
+        'ft ft';
+    }
+    .shipping {
+        width: 70%;
+    }
+    .product-in-cart {
+        height: 400px;
+    }
+    .info {
+        line-height: 15px;
+    }
+}
+
+
+/** About page **/
+
+.bigbox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75px 100px 200px 200px 200px 200px 10%;
+    width: 100%;
+    row-gap: 20px;
+    grid-template-areas: 
+    'hd hd'
+    'h1 h1'
+    'q1 if'
+    'q2 if'
+    'q3 if'
+    'q4 if'
+    'ft ft';
+}
+
+.question {
+    width: 400px;
+    height: 200px;
+    background-color: var(--dark);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px #000000A0;
+}
+
+.fraga {
+    width: 70%;
+    height: 15%;
+    background-color: white;
+    color: black;
+    margin: 10px;
+    border-radius: inherit;
+    padding: 10px;
+
+}
+
+.svar {
+    width: 70%;
+    background-color: white;
+    color: black;
+    height: 45%;
+    margin: 5px;
+    border-radius: inherit;
+    padding: 10px;
+}
+#q1 {
+    grid-area: q1;
+}
+#q2 {
+    grid-area: q2;
+}
+#q3 {
+    grid-area: q3;
+}
+#q4 {
+    grid-area: q4;
+}
+
+.yapyap {
+    grid-area: if;
+    height: 100%;
+    width: 90%;
+    background-color: var(--dark);
+    margin: auto;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 5px 5px 5px 5px #000000A0;
+}
+
+h1 {
+    grid-area: h1;
+    background-color: var(--dark);
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .bigbox {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 75px 100px 200px 200px 200px 200px 10%;
+        grid-template-areas: 
+        'hd hd'
+        'h1 h1'
+        'q1 q1'
+        'q2 q2'
+        'q3 q3'
+        'q4 q4'
+        'ft ft';
+    }
+    .question {
+        width: 90%;
+    }
+    
+}
+
+.yapyap img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    margin: auto;
+}
+
+
+.title h1 {
+    background-color: transparent;
+    transition: 350ms ease;
+}
+.title h1:hover {
+    color: var(--orange);
+    background-color: var(--dark);
     scale: 1.1;
 }

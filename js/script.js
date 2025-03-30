@@ -11,6 +11,7 @@ button.addEventListener('click', function() {
     navbar.classList.toggle('visible');}
 );
 
+
 document.onkeydown = function(event) {
     if (event.key === 'Escape' && navbar.classList.contains('visible')) {
         navbar.classList.toggle('visible');
