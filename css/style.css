@@ -455,7 +455,7 @@ aside img {
 /** Cart page **/
 
 .cart-container {
-    height: 1200px;
+    height: 150%;
     width: 100%;
 
     display: grid;
