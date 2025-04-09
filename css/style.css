@@ -47,6 +47,13 @@ body {
         '.  .  . '
         'ft ft ft';
     }
+    .link-icon {
+        font-size: 20px;
+    }
+    .product {
+        width: 85%;
+        align-self: center;
+    }
 }
 
 
@@ -442,13 +449,14 @@ aside img {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 33%);
+    padding: 10px;
 }
 
 .review {
     background-color: var(--myGray);
     margin: 10px;
     border-radius: 20px;
-    padding: 15px;
+    padding: 20px;
     color: black;
 }
 
@@ -462,7 +470,7 @@ aside img {
 
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 75px 400px 400px 10%;
+    grid-template-rows: 75px 450px 450px 10%;
 
     grid-template-areas: 
     'hd hd'
@@ -479,7 +487,7 @@ aside img {
     background-color: var(--dark);
     margin: auto;
     margin-top: 10%;
-    height: 300px; 
+    height: fit-content; 
     width: 80%;
 
     display: grid;
@@ -498,9 +506,8 @@ aside img {
 
 .image {
     grid-area: img;
-    background-color: white;
-    width: 90%;
-    height: 90%;
+    background-color: transparent;
+    height: 100%;
     margin: 5%;
 }
 
@@ -510,7 +517,7 @@ aside img {
     border-radius: 15px;
     margin: 7px;
     padding-left: 2%;
-    line-height: 10px;
+    line-height: auto;
 }
 
 
@@ -520,14 +527,13 @@ aside img {
     border-radius: 15px;
     margin: 7px;
     padding-left: 2%;
-    line-height: 10px;
+    line-height: auto;
 
 }
 
 .image img {
-    height: 70%;
     width: 100%;
-    margin:auto;
+    border-radius: 25px;
 }
 
 .disclaimer {
@@ -538,7 +544,7 @@ aside img {
     grid-area: in;
     background-color: var(--dark);
     height: 80%;
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -624,13 +630,10 @@ input {
         'ft ft';
     }
     .shipping {
-        width: 70%;
+        width: 80%;
     }
     .product-in-cart {
         height: 400px;
-    }
-    .info {
-        line-height: 15px;
     }
 }
 
@@ -660,7 +663,7 @@ input {
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     overflow: hidden;
@@ -728,7 +731,7 @@ h1 {
 @media screen and (max-width: 500px){
     .bigbox {
         grid-template-columns: 50% 50%;
-        grid-template-rows: 75px 100px 200px 200px 200px 200px 10%;
+        grid-template-rows: 75px 100px 200px 200px 200px 200px 12%;
         grid-template-areas: 
         'hd hd'
         'h1 h1'
